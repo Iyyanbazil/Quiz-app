@@ -1,11 +1,11 @@
-import PhoneBook from "./components/phonebook/Phonebook"
+import Quiz from "./components/quiz/quiz"
 
 
 function App() {
  
   return (
     <div className="App">
-      <PhoneBook/>
+     <Quiz/>
     
      
     </div>
