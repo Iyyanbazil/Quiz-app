@@ -1,0 +1,215 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* background-color: rgba(0, 255, 255, 0.051); */
+    /* overflow: hidden; */
+    /* overflow-x: hidden; */
+}
+.board{
+ height: 30rem;
+ width: 100%;
+margin-top: 3rem;
+}
+.board-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+    
+}
+
+.board-row .span1 button{
+   border-top: none;
+    background-color: rgb(255, 255, 255);
+    border-left: none;
+  border-right: none;
+}
+
+.board-row .span2 button{
+    border-top: none;
+    background-color: rgb(255, 255, 255);
+    border-right: none;
+}
+.board-row .span3 button {
+    border-top: none;
+    background-color: rgb(255, 255, 255);
+   border-right: none;
+   
+}
+
+
+.board-row .span4 button{
+    border-top: none;
+     background-color: rgb(255, 255, 255);
+     border-left: none;
+   border-right: none;
+ }
+ 
+ .board-row .span5 button{
+     border-top: none;
+     background-color: rgb(255, 255, 255);
+     border-right: none;
+ }
+ .board-row .span6 button {
+     border-top: none;
+     background-color: rgb(255, 255, 255);
+    border-right: none;
+    
+ }
+
+ .board-row .span7 button{
+     background-color: rgb(255, 255, 255); 
+   border: none;
+ }
+ 
+ .board-row .span8 button{
+     border-top: none;
+     background-color: rgb(255, 255, 255);
+     border-right: none;
+     border-bottom: none;
+ }
+ .board-row .span9 button {
+     border-top: none;
+     background-color: rgb(255, 255, 255);
+    border-right: none;
+    border-bottom: none;
+    
+ }
+.square-btn{
+    height: 7rem;
+    width: 7rem;
+    cursor: pointer;
+    /* border-collapse: collapse; */
+   font-size: 2rem;
+   color: brown;
+   
+}
+.square-btn-new{
+    color: black;
+}
+
+.turn-div{
+    display: grid;
+    place-items: center;
+}
+.player-turn{
+
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+    background-color: rgba(165, 42, 42, 0.316);
+    width: 10rem;
+    padding: 0.2rem 1.2rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tic-head{
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-family: fantasy;
+  color: rgba(165, 42, 42, 0.751);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 15px 15px 15px ;
+ 
+}
+.winner-div button {
+    margin-top: 0.5rem;
+    padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+    border-bottom: 3px solid red;
+    border-top: none;
+    border-left: none;
+    border-right:none ;
+    background-color: rgba(0, 255, 255, 0.929);
+    cursor: pointer;
+    color:black;
+    border-radius: 0.5rem;
+    
+}
+.winner-div button:hover{
+    background-color: rgba(0, 255, 255, 0.777);
+    border-bottom: 3px solid rgba(255, 0, 0, 0.46);
+    font-weight: bold;
+    
+}
+.board-row:first-child{
+    border-top: none;
+    border-collapse: collapse;
+}
+.winner-div{
+ display: grid;
+ place-items: center;
+    border: 1px solid red;
+    width: 15rem;
+    height: 5rem;
+    position: absolute;
+    left: 40%;
+    background-color: rgba(255, 0, 0, 0.682);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 10rem;
+}
+.everytime-replay{
+   position: absolute;
+   top: 30rem;
+   left: 10rem;
+   margin-top: 0.5rem;
+   padding: 0.5rem 2rem;
+   /* border-bottom: 3px solid red; */
+border: none;
+   background-color: rgba(0, 255, 255, 0.929);
+   cursor: pointer;
+   color:black;
+   font-size: 2rem;
+}
+@media screen and (max-width:630px) {
+    .winner-div{
+        display: grid;
+        place-items: center;
+           border: 1px solid red;
+           width: 15rem;
+           height: 5rem;
+           position: absolute;
+           left: 22%;
+           background-color: rgba(255, 0, 0, 0.682);
+           color: white;
+           font-size: 1.5rem;
+           border: none;
+           border-radius: 1rem;
+           margin-top: 12rem;
+       }
+       .main-div{
+        margin-top: 3rem;
+       }
+       .tic-head{
+        display: grid;
+        place-items: center;
+        /* margin-top: 2rem; */
+        font-size: 4rem;
+        font-family: fantasy;
+        color: rgba(165, 42, 42, 0.751);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        text-shadow: 15px 15px 15px ;
+       
+      }
+      .everytime-replay{
+        position: absolute;
+        top: 44rem;
+        left: 9rem;
+        margin-top: 0.5rem;
+        padding: 0.5rem 2rem;
+        /* border-bottom: 3px solid red; */
+     border: none;
+        background-color: rgba(0, 255, 255, 0.929);
+        cursor: pointer;
+        color:black;
+        font-size: 2rem;
+     }
+}
