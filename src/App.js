@@ -1,11 +1,11 @@
+import PhoneBook from "./components/phonebook/Phonebook"
 
 
-import Tic_tac_toe from './components/tic-tac-toe/tic_tac_toe';
 function App() {
  
   return (
     <div className="App">
-      <Tic_tac_toe/>
+      <PhoneBook/>
     
      
     </div>
